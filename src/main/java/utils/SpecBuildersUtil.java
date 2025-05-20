@@ -1,7 +1,5 @@
 package utils;
 
-import org.hamcrest.Matcher;
-
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
@@ -17,10 +15,9 @@ public class SpecBuildersUtil {
 		return req;
 	}
 
-	public static ResponseSpecification makeResponseSpec(String property, int statusCode, Matcher matcher) {
+	public static ResponseSpecification makeResponseSpec(ContentType content) {
 
-		ResponseSpecification res = new ResponseSpecBuilder().expectStatusCode(statusCode)
-				.expectContentType(ContentType.JSON).expectBody(property, matcher).
+		ResponseSpecification res = new ResponseSpecBuilder().expectContentType(content).
 				build();
 		return res;
 	}
