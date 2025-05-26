@@ -6,7 +6,14 @@ public class ScenarioContext {
 
 	private Response response;
 	private String bookID;
+	private String baseUrl;
 	
+	public String getBaseUrl() {
+		return baseUrl;
+	}
+	public void setBaseUrl(String baseUrl) {
+		this.baseUrl = baseUrl;
+	}
 	public Response getResponse() {
 		return response;
 	}

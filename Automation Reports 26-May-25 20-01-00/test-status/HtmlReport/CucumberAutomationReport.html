@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 26, 2025 07:40:32 PM</span>
+			<span class='label blue darken-3 suite-start-time'>May 26, 2025 08:01:00 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -77,6 +77,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Smoke</a></li>
+					<li><a href='#'>@Regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -119,7 +120,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>2</span> features passed</span>
+                    <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -137,7 +138,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>5</span> scenarios passed</span>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -157,7 +158,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>21</span> steps passed</span>
+                    <span class='strong'>5</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -186,8 +187,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify Add Book Feature of API</span>
-						<span class='test-time'>May 26, 2025 07:40:33 PM</span>
+						<span class='test-name'>Verify Get Book Feature of API</span>
+						<span class='test-time'>May 26, 2025 08:01:02 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -200,19 +201,20 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 02.918</span>
+	<span class='duration right label'>00 00 04.807</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: verify user is able to add single book</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify user is able to retrive book using ID</div>
 	</div>
 	
 	
 		<div class='category-list'>
 				<span class='category label'>@Smoke</span>
+				<span class='category label'>@Regression</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='3' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.AddBookStepDefinition.library_base_url_is_available())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given library baseURL is available</div>
+			<div class="step-name" title="(stepDefinitions.CommonStepDefinition.library_base_url_is_available())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given library baseURL is available</div>
 
 
 		</li>
@@ -222,158 +224,16 @@
 
 		</li>
 		<li test-id='5' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.AddBookStepDefinition.the_status_code_should_be(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the status code should be "200"</div>
-
-
-		</li>
-		<li test-id='6' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.AddBookStepDefinition.response_should_contain_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And response should contain message "successfully added"</div>
-
-
-		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='7' status='pass'>
-
-	<span class='duration right label'>00 00 00.445</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify Book Addition using Data Paramterisation</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>bookName</td><td>isbn</td><td>aisle</td><td>author</td></tr><tr><td>Rest Assured Solutions</td><td>amalu</td><td>1234</td><td>Amalu VS</td></tr><tr><td>Learn Java With Sree Ganga</td><td>sreeganga</td><td>0098</td><td>S Ganga</td></tr><tr><td>Appium With JS</td><td>glen</td><td>2201</td><td>Glen Joy</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='8' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Book Addition using Data Paramterisation</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Smoke</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='9' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.library_base_url_is_available()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given library baseURL is available</h6>
-
-				</li>
-				<li test-id='10' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.user_sends_post_request_to_add_book_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user sends post request to add book with "Rest Assured Solutions" "amalu" "1234" "Amalu VS"</h6>
-
-				</li>
-				<li test-id='11' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.the_status_code_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the status code should be "200"</h6>
-
-				</li>
-				<li test-id='12' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.response_should_contain_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And response should contain message "successfully added"</h6>
-
-				</li>
-			</ul>
-		</li>
-		<li test-id='13' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Book Addition using Data Paramterisation</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Smoke</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='14' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.library_base_url_is_available()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given library baseURL is available</h6>
-
-				</li>
-				<li test-id='15' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.user_sends_post_request_to_add_book_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user sends post request to add book with "Learn Java With Sree Ganga" "sreeganga" "0098" "S Ganga"</h6>
-
-				</li>
-				<li test-id='16' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.the_status_code_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the status code should be "200"</h6>
-
-				</li>
-				<li test-id='17' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.response_should_contain_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And response should contain message "successfully added"</h6>
-
-				</li>
-			</ul>
-		</li>
-		<li test-id='18' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify Book Addition using Data Paramterisation</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Smoke</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='19' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.library_base_url_is_available()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given library baseURL is available</h6>
-
-				</li>
-				<li test-id='20' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.user_sends_post_request_to_add_book_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user sends post request to add book with "Appium With JS" "glen" "2201" "Glen Joy"</h6>
-
-				</li>
-				<li test-id='21' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.the_status_code_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the status code should be "200"</h6>
-
-				</li>
-				<li test-id='22' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.AddBookStepDefinition.response_should_contain_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And response should contain message "successfully added"</h6>
-
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='23'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify Get Book Feature of API</span>
-						<span class='test-time'>May 26, 2025 07:40:36 PM</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='24' status='pass'>
-
-	<span class='duration right label'>00 00 00.368</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify user is able to retrive book using ID</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@Smoke</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='25' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.AddBookStepDefinition.library_base_url_is_available())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given library baseURL is available</div>
-
-
-		</li>
-		<li test-id='26' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.AddBookStepDefinition.user_sends_post_request_to_add_book_with_unique_creds())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user sends post request to add book with unique creds</div>
-
-
-		</li>
-		<li test-id='27' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.GetBookStepDefinition.user_sends_get_request_to_grab_book_using_id())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user sends get request to grab book using ID</div>
 
 
 		</li>
-		<li test-id='28' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.AddBookStepDefinition.the_status_code_should_be(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the status code should be "200"</div>
+		<li test-id='6' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.CommonStepDefinition.the_status_code_should_be(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the status code should be "200"</div>
 
 
 		</li>
-		<li test-id='29' class='node and Pass' status='Pass'>
+		<li test-id='7' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.GetBookStepDefinition.verify_user_is_able_to_retrive_same_data_sent_while_creating_book())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify user is able to retrive same data sent while creating book</div>
 
 
@@ -426,12 +286,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@Smoke</span>
 						<span class='category-status right'>
-						<span class='label pass'>5</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 5</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -446,28 +306,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 26, 2025 07:40:33 PM</td>
-										<td class='linked' test-id='2'>verify user is able to add single book</td>
+										<td>May 26, 2025 08:01:02 PM</td>
+										<td class='linked' test-id='2'>Verify user is able to retrive book using ID</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Regression</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
 									<tr>
-										<td>May 26, 2025 07:40:36 PM</td>
-										<td class='linked' test-id='8'>Verify Book Addition using Data Paramterisation</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
 									</tr>
+								</thead>
+								<tbody>
 									<tr>
-										<td>May 26, 2025 07:40:36 PM</td>
-										<td class='linked' test-id='13'>Verify Book Addition using Data Paramterisation</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 26, 2025 07:40:36 PM</td>
-										<td class='linked' test-id='18'>Verify Book Addition using Data Paramterisation</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 26, 2025 07:40:36 PM</td>
-										<td class='linked' test-id='24'>Verify user is able to retrive book using ID</td>
+										<td>May 26, 2025 08:01:02 PM</td>
+										<td class='linked' test-id='2'>Verify user is able to retrive book using ID</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -492,37 +365,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 26, 2025 07:40:32 PM</div>
+					<div class='panel-lead'>May 26, 2025 08:01:00 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 26, 2025 07:40:37 PM</div>
+			 		<div class='panel-lead'>May 26, 2025 08:01:07 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 04.755</div>
+					<div class='panel-lead'>00 00 06.486</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -539,7 +412,16 @@
 						</tr>
 						<tr>
 							<td>@Smoke</td>
-							<td>5</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Regression</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -557,23 +439,23 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 2,
-				passParent: 2,
+                parentCount: 1,
+				passParent: 1,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 5,
-				passChild: 5,
+				childCount: 1,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 21,
-				passGrandChild: 21,
+				grandChildCount: 5,
+				passGrandChild: 5,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -585,7 +467,7 @@
 		
 		<script>
 			var timeline = {
-			        "Verify Add Book Feature of API":3.379,"Verify Get Book Feature of API":0.368
+			        "Verify Get Book Feature of API":4.811
 			};
 		</script>
 		

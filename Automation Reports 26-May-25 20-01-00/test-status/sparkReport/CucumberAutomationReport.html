@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 26, 2025 07:34:56 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 26, 2025 08:01:00 PM</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Smoke</a>
+<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +90,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Verify Add Book Feature of API</p>
+            <p class="name">Verify Get Book Feature of API</p>
             <p class="text-sm">
-              <span>7:34:57 PM</span> / <span>00:00:03:946</span>
+              <span>8:01:02 PM</span> / <span>00:00:04:811</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,10 +100,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Verify Add Book Feature of API</h5>
-<span class='badge badge-success'>05.26.2025 7:34:57 PM</span>
-<span class='badge badge-danger'>05.26.2025 7:35:01 PM</span>
-<span class='badge badge-default'>00:00:03:946</span>
+<h5 class="test-status text-pass">Verify Get Book Feature of API</h5>
+<span class='badge badge-success'>05.26.2025 8:01:02 PM</span>
+<span class='badge badge-danger'>05.26.2025 8:01:07 PM</span>
+<span class='badge badge-default'>00:00:04:811</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -115,169 +115,12 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>verify user is able to add single book</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify user is able to retrive book using ID</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.AddBookStepDefinition.library_base_url_is_available()">
-                <span>Given library baseURL is available</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.AddBookStepDefinition.user_sends_post_request_to_add_book_with_unique_creds()">
-                <span>When user sends post request to add book with unique creds</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.AddBookStepDefinition.the_status_code_should_be(java.lang.String)">
-                <span>Then the status code should be "200"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.AddBookStepDefinition.response_should_contain_message(java.lang.String)">
-                <span>And response should contain message "successfully added"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Verify Book Addition using Data Paramterisation</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Verify Book Addition using Data Paramterisation</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given library baseURL is available</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user sends post request to add book with "Rest Assured Solutions" "amalu" "1234" "Amalu VS"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the status code should be "200"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And response should contain message "successfully added"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Verify Book Addition using Data Paramterisation</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given library baseURL is available</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user sends post request to add book with "Learn Java With Sree Ganga" "sreeganga" "0098" "S Ganga"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the status code should be "200"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And response should contain message "successfully added"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Verify Book Addition using Data Paramterisation</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given library baseURL is available</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user sends post request to add book with "Appium With JS" "glen" "2201" "Glen Joy"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the status code should be "200"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And response should contain message "successfully added"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="23"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Verify Get Book Feature of API</p>
-            <p class="text-sm">
-              <span>7:35:01 PM</span> / <span>00:00:00:538</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Verify Get Book Feature of API</h5>
-<span class='badge badge-success'>05.26.2025 7:35:01 PM</span>
-<span class='badge badge-danger'>05.26.2025 7:35:01 PM</span>
-<span class='badge badge-default'>00:00:00:538</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Verify user is able to retrive book using ID</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.AddBookStepDefinition.library_base_url_is_available()">
+              <div class="step pass-bg" title="stepDefinitions.CommonStepDefinition.library_base_url_is_available()">
                 <span>Given library baseURL is available</span>
       <div>
       </div>
@@ -292,7 +135,7 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.AddBookStepDefinition.the_status_code_should_be(java.lang.String)">
+              <div class="step pass-bg" title="stepDefinitions.CommonStepDefinition.the_status_code_should_be(java.lang.String)">
                 <span>Then the status code should be "200"</span>
       <div>
       </div>
@@ -321,22 +164,22 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>5</span>
+<span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">@Smoke</p>
-<p class="duration text-sm">5 tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Smoke</h4>
-<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -349,49 +192,45 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:34:57 PM</td>
+<td>20:01:02 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>verify user is able to add single book</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify user is able to retrive book using ID</a>
 <div class="">
-<span class="badge badge-default">Verify Add Book Feature of API.verify user is able to add single book</span>
+<span class="badge badge-default">Verify Get Book Feature of API.Verify user is able to retrive book using ID</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:35:00 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='8'>Verify Book Addition using Data Paramterisation</a>
-<div class="">
-<span class="badge badge-default">Verify Add Book Feature of API.Verify Book Addition using Data Paramterisation</span>
+</tbody>
+</table>
 </div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:35:01 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='13'>Verify Book Addition using Data Paramterisation</a>
-<div class="">
-<span class="badge badge-default">Verify Add Book Feature of API.Verify Book Addition using Data Paramterisation</span>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">1 tests</p>
 </div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:35:01 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='18'>Verify Book Addition using Data Paramterisation</a>
-<div class="">
-<span class="badge badge-default">Verify Add Book Feature of API.Verify Book Addition using Data Paramterisation</span>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
-</td>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
 </tr>
+</thead>
+<tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:35:01 PM</td>
+<td>20:01:02 PM</td>
 <td>
-<a href="#" class="linked" test-id='23' id='24'>Verify user is able to retrive book using ID</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify user is able to retrive book using ID</a>
 <div class="">
 <span class="badge badge-default">Verify Get Book Feature of API.Verify user is able to retrive book using ID</span>
 </div>
@@ -414,19 +253,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 26, 2025 07:34:56 PM</h3>
+<h3>May 26, 2025 08:01:00 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 26, 2025 07:35:01 PM</h3>
+<h3>May 26, 2025 08:01:07 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -449,7 +288,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>2</b> features passed
+<b>1</b> features passed
 </small>
 </div>
 <div>
@@ -471,7 +310,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>5</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -491,7 +330,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>21</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>5</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -510,7 +349,7 @@
 </div></div>
 <script>
 var timeline = {
-"Verify Add Book Feature of API":3.946,"Verify Get Book Feature of API":0.538
+"Verify Get Book Feature of API":4.811
 };
 </script>
 <div class="row">
@@ -521,7 +360,15 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@Smoke</td>
-<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -536,18 +383,18 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
+passParent: 1,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 5,
+passChild: 1,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 21,
+passGrandChild: 5,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
