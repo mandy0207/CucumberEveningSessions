@@ -5,7 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features="src/main/java/featureFiles",
 glue="stepDefinitions",
-tags="@Sanity")
+tags="@Smoke", plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+		"html:target/cucumber.html", "json:target/cucumber.json"})
 public class TestRunner  extends AbstractTestNGCucumberTests{
 
 }
+
